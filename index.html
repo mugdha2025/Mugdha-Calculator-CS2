@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="container">
+    <div id="display">0</div>
+
+    <div class="operators">
+      <button onclick="appendOperator('+')">+</button>
+      <button onclick="appendOperator('-')">-</button>
+      <button onclick="appendOperator('/')">/</button>
+      <button onclick="appendOperator('*')">*</button>
+    </div>
+
+    <div class="topRow">
+      <button onclick="appendNumber('7')">7</button>
+      <button onclick="appendNumber('8')">8</button>
+      <button onclick="appendNumber('9')">9</button>
+    </div>
+
+    <div class="middleRow">
+      <button onclick="appendNumber('4')">4</button>
+      <button onclick="appendNumber('5')">5</button>
+      <button onclick="appendNumber('6')">6</button>
+    </div>
+
+    <div class="bottomRow">
+      <button onclick="appendNumber('3')">3</button>
+      <button onclick="appendNumber('2')">2</button>
+      <button onclick="appendNumber('1')">1</button>
+      <button onclick="appendNumber('0')">0</button>
+    </div>
+
+    <div class="toDo">
+      <button onclick="clearDisplay('C')">C</button>
+      <button onclick="operate(currentOperator)">=</button>
+      
+    </div>
+    
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+
+</html>
