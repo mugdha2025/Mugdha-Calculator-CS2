@@ -77,7 +77,9 @@ function operate() {
         result = divide(numb1, numb2);
     }
 
-    displayValue = String(result);
+    roundedResult = Math.round(result *100) / 100;
+
+    displayValue = String(roundedResult);
     updateDisplay();
     firstNumb = displayValue;
     scndNumb = '';
